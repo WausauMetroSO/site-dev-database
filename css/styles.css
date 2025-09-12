@@ -1,0 +1,174 @@
+/* General Styles */
+.hidden {
+  display: none;
+}
+
+.form-button {
+  margin-top: 2rem;
+}
+
+/* Clerk Components Overrides */
+.cl-avatarBox {
+  width: 3rem;
+  height: 3rem;
+}
+
+.cl-popoverBox {
+  font-size: 100%;
+  width: 25rem;
+  height: auto;
+}
+
+.cl-userPreviewMainIdentifierText, .cl-userButtonPopoverActionButton {
+  font-size: initial;
+}
+
+.cl-userButtonPopoverActionButtonIconBox {
+  transform: scale(2.25)
+}
+
+.cl-userButtonPopoverFooter {
+  transform: scale(1.25);
+}
+
+.cl-userProfile-root {
+  transform: scale(1.5);
+}
+
+/* Navbar Styles */
+.navbar__user {
+  margin-right: 2rem;
+}
+
+/* Footer Styles */
+footer {
+  padding: 4rem;
+  margin-top: 5rem;
+  font-weight: bold;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Back Button */
+.back-button {
+  margin-top: 3rem;
+  margin-left: 1.5rem;
+}
+
+.back-button img {
+  cursor: pointer;
+}
+
+/* Search bar */
+.search .icon {
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+
+.search .search__input {
+  width: 95%;
+}
+
+/* Table Styles */
+tr.htmx-swapping td {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.athlete-table__header-svg {
+  display: block;
+}
+
+.athlete-row {
+  cursor: pointer;
+  border-bottom: 1px solid var(--font-color);
+}
+
+.athlete-row:hover {
+  background: var(--bg-secondary-color);
+  transition: 0.4s;
+}
+
+.athlete-details-row {
+  background: var(--bg-secondary-color);
+  max-width: 100rem;
+  margin: 1rem auto;
+}
+
+.athlete-details-row__header {
+  align-items: center;
+}
+
+.athlete-details-row__header h4 {
+  margin: 0 1.5rem 0.5rem 0;
+}
+
+.athlete-details-row__header span.icon {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/* Add new button */
+.add-new-button {
+  margin-top: 2rem;
+}
+
+/* Add new form */
+.new-athlete-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.new-athlete-modal__container {
+  background: var(--bg-color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  min-width: 320px;
+  max-width: 90vw;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+}
+
+.new-athlete-modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-athlete-modal__close {
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.new-athlete-modal[style*="display: none"] {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+/* Athlete Details */
+.athlete-details {
+  background: var(--bg-secondary-color);
+  max-width: 100rem;
+  margin: 1rem auto;
+}
+
+.athlete-details__header {
+  align-items: center;
+}
+
+.athlete-details__header h4 {
+  margin: 0 1.5rem 0.5rem 0;
+}
+
+.athlete-details__header span.icon {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+}
